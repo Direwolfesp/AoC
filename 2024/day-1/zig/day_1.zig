@@ -4,7 +4,7 @@ const N_LINES = 1000;
 fn part_a(filepath: []const u8) !u32 {
     var file = try std.fs.cwd().openFile(filepath, .{});
     defer file.close();
-    var buf: [N_LINES * 15]u8 = undefined;
+    var buf: [4096]u8 = undefined;
     var reader = file.readerStreaming(&buf);
 
     var list_l: [N_LINES]i32 = undefined;

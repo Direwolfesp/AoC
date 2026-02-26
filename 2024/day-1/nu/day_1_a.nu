@@ -10,6 +10,6 @@ def main [file: path] {
     | zip ($nums.right | sort)
     | flatten
     | chunks 2
-    | each { $in.0 - $in.1 | math abs}
+    | each { $in.0 - $in.1 | math abs }
     | math sum
 }

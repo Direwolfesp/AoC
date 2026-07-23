@@ -25,7 +25,7 @@ pub fn main() {
 }
 
 #[allow(dead_code)]
-/// A more idiomatic implementation converting each line into a HasSet
+/// A more idiomatic implementation converting each line into a HashSet
 /// and computing the intersection of all the lines together, and
 /// counting the number of elements
 fn alt_main() {
